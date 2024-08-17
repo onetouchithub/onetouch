@@ -25,7 +25,7 @@ const MyHero = () => {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="mx-auto text-nowrap max-w-4xl px-4 text-center text-2xl font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug "
+          className="mx-auto  max-w-4xl px-4 text-center text-2xl font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug "
         >
           {/* Dubai's expert in <br />
           <Highlight className="text-black dark:text-white text-nowrap">
@@ -33,7 +33,7 @@ const MyHero = () => {
           </Highlight> */}
           One Touch is your trusted source of {" "} <br />
           <Highlight className="text-nowrap text-black dark:text-white">
-            IT services and support
+            IT services and support.
           </Highlight>
         </motion.h1>
         {/* <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
