@@ -1,13 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { HeroHighlight, Highlight } from "./hero";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Modal from "../modal/modal";
+import ContactForm from "../Contact/form";
 
 const MyHero = () => {
+  const [openModal, setOpenModal] = useState(true);
   return (
     <HeroHighlight>
+      <Modal
+        isOpen={openModal}
+        onClose={() => {
+          setOpenModal(false);
+        }}
+        title="Contact us"
+      >
+        <ContactForm />
+      </Modal>
       <div
         className="wow fadeInUp mx-auto max-w-[800px] text-center"
         data-wow-delay=".2s"
@@ -31,7 +43,7 @@ const MyHero = () => {
           <Highlight className="text-black dark:text-white text-nowrap">
             network installation & configuration
           </Highlight> */}
-          One Touch is your trusted source of {" "} <br />
+          One Touch is your trusted source of <br />
           <Highlight className="text-nowrap text-black dark:text-white">
             IT services and support.
           </Highlight>
