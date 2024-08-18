@@ -16,6 +16,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "One Touch",
   description: "One Touch",
+  icons:{
+    icon:'/favicon.ico'
+  }
   // other metadata
 };
 
