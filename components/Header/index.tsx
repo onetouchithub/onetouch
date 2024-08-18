@@ -56,21 +56,21 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <h1 className="text-3xl font-black" >One Touch</h1>
-                {/* <Image
-                  src="/images/logo/logo-2.svg"
+                {/* <h1 className="text-3xl font-black" >One Touch</h1> */}
+                <Image
+                  src="/images/logo/light.png"
                   alt="logo"
                   width={140}
                   height={30}
-                  className="w-full dark:hidden"
+                  className="w-full object-cover dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/dark.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
-                /> */}
+                />
               </Link>
             </div>
             <div className="flex items-center justify-between px-4">

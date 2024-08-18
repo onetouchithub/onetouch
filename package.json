@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.111.1",
     "@react-three/fiber": "^8.17.5",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
@@ -26,7 +27,8 @@
     "react-dom": "^18.2.0",
     "react-modal-video": "^2.0.0",
     "tailwind-merge": "^2.5.2",
-    "three": "^0.167.1"
+    "three": "^0.167.1",
+    "three-globe": "^2.31.1"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
