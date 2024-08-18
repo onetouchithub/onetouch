@@ -17,6 +17,7 @@
     "@tsparticles/slim": "^3.5.0",
     "@types/three": "^0.167.1",
     "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "framer-motion": "^11.3.28",
