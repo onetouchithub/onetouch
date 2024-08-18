@@ -47,8 +47,8 @@ const Achievements = () => {
         </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-4">
-          {features.map((x) => (
-            <SingleFeature feature={x} />
+          {features.map((x,index) => (
+            <SingleFeature key={index} feature={x} />
           ))}
           {/* <div className="border-1 w-full border h-40 rounded-lg border-slate-700"></div> */}
         </div>

@@ -423,10 +423,10 @@ const AboutSectionTwo = () => {
                   Customer satisfaction
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  At Onetouch, we're setting the standard for excellence across
+                  At Onetouch, we&apos;re setting the standard for excellence across
                   Dubai and the UAE. Our mission goes beyond mere customer
                   satisfaction - we strive to exceed expectations at every turn.
-                  By deeply understanding each client's unique challenges, we
+                  By deeply understanding each client&apos;s unique challenges, we
                   deliver tailor-made, cutting-edge solutions that drive real
                   results. Our commitment to unparalleled quality, coupled with
                   clear and proactive communication, ensures not just
