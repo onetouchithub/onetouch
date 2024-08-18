@@ -1,6 +1,7 @@
 "use client";
 
-import { World } from "../ui/globe";
+import { Suspense } from "react";
+import DynamicWorld from "../ui/dynamicglobe";
 
 const AboutSectionTwo = () => {
   const globeConfig = {
@@ -409,7 +410,9 @@ const AboutSectionTwo = () => {
                 fill
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
               /> */}
-              <World data={sampleArcs} globeConfig={globeConfig} />
+              <Suspense fallback={<h1>loading</h1>}>
+                <DynamicWorld globeConfig={globeConfig} data={sampleArcs} />
+              </Suspense>
 
               {/* <GlobeDemo /> */}
             </div>
@@ -421,15 +424,15 @@ const AboutSectionTwo = () => {
                   Customer satisfaction
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  At Onetouch, we&apos;re setting the standard for excellence across
-                  Dubai and the UAE. Our mission goes beyond mere customer
-                  satisfaction - we strive to exceed expectations at every turn.
-                  By deeply understanding each client&apos;s unique challenges, we
-                  deliver tailor-made, cutting-edge solutions that drive real
-                  results. Our commitment to unparalleled quality, coupled with
-                  clear and proactive communication, ensures not just
-                  satisfaction, but true partnership and success for every
-                  client we serve
+                  At Onetouch, we&apos;re setting the standard for excellence
+                  across Dubai and the UAE. Our mission goes beyond mere
+                  customer satisfaction - we strive to exceed expectations at
+                  every turn. By deeply understanding each client&apos;s unique
+                  challenges, we deliver tailor-made, cutting-edge solutions
+                  that drive real results. Our commitment to unparalleled
+                  quality, coupled with clear and proactive communication,
+                  ensures not just satisfaction, but true partnership and
+                  success for every client we serve
                 </p>
               </div>
               <div className="mb-9">
