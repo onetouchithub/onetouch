@@ -11,6 +11,9 @@ dependencies:
   '@react-three/fiber':
     specifier: ^8.17.5
     version: 8.17.5(react-dom@18.2.0)(react@18.2.0)(three@0.167.1)
+  '@tabler/icons-react':
+    specifier: ^3.12.0
+    version: 3.12.0(react@18.2.0)
   '@tsparticles/engine':
     specifier: ^3.5.0
     version: 3.5.0
@@ -743,6 +746,19 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       defer-to-connect: 2.0.1
+    dev: false
+
+  /@tabler/icons-react@3.12.0(react@18.2.0):
+    resolution: {integrity: sha512-RnJl3HrCqInuC8JJEUxWuYP4OFNYnY2EUtBqZFSpYatPKY3AnvJBIrShJLHf3fiLPpo6xEYAIoB7Qow93JX0fQ==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      '@tabler/icons': 3.12.0
+      react: 18.2.0
+    dev: false
+
+  /@tabler/icons@3.12.0:
+    resolution: {integrity: sha512-Im37ar/mQkqLb6XUXsU7nOc4/66VB9/3KLuZ+6tUsJKHHNLaDUkYfCTNG3pnGDI03laByxVf5+umSNK2yPTx8A==}
     dev: false
 
   /@tsparticles/basic@3.5.0:
