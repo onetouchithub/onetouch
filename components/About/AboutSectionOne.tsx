@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
@@ -58,7 +59,7 @@ const AboutSectionOne = () => {
                   src="/images/about/ds.png"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark dark:drop-shadow-none lg:mr-0"
+                  className="dark mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0"
                 />
                 {/* <Image
                   src="/images/about/about-image-dark.svg"

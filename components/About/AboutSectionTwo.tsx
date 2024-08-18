@@ -1,8 +1,6 @@
-// "use client";
+"use client";
 
-import Image from "next/image";
-import { Globe, World } from "../ui/globe";
-import { GlobeDemo } from "./globedemo";
+import { World } from "../ui/globe";
 
 const AboutSectionTwo = () => {
   const globeConfig = {
