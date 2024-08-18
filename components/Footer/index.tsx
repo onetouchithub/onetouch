@@ -1,4 +1,5 @@
 "use client";
+import { MailIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -101,18 +102,18 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/blogs"
+                      href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Home
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/pricing"
+                      href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Contact
                     </a>
                   </li>
                   <li>
@@ -121,40 +122,6 @@ const Footer = () => {
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      TOS
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
                     </a>
                   </li>
                 </ul>
@@ -172,7 +139,7 @@ const Footer = () => {
                       href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Open Support Ticket
+                      Ask your query
                     </a>
                   </li>
                   <li>
@@ -190,6 +157,24 @@ const Footer = () => {
                     >
                       About
                     </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="w-full sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Contact Info
+                </h2>
+                <ul>
+                  <li className="mb-4 flex flex-row gap-2">
+                    <PhoneIcon />
+                    <a href="tel:+971 50 773 3605">+971 50 773 3605</a>
+                  </li>
+                  <li className="mb-4 flex flex-row gap-2">
+                    <MailIcon />
+                    <a href="mailto:info@onetouch.ae">info@onetouch.ae</a>
                   </li>
                 </ul>
               </div>
