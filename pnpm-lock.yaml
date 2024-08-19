@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@emailjs/browser':
+    specifier: ^4.4.1
+    version: 4.4.1
   '@react-three/drei':
     specifier: ^9.111.1
     version: 9.111.1(@react-three/fiber@8.17.5)(@types/react@18.3.3)(@types/three@0.167.1)(react-dom@18.3.1)(react@18.3.1)(three@0.167.1)
@@ -62,6 +65,9 @@ dependencies:
   react-modal-video:
     specifier: ^2.0.0
     version: 2.0.0(@babel/core@7.25.2)(eslint-plugin-jsx-a11y@6.9.0)(eslint-plugin-react-hooks@4.6.2)(eslint-plugin-react@7.35.0)(react-dom@18.3.1)(react@18.3.1)
+  sonner:
+    specifier: ^1.5.0
+    version: 1.5.0(react-dom@18.3.1)(react@18.3.1)
   tailwind-merge:
     specifier: ^2.5.2
     version: 2.5.2
@@ -313,6 +319,11 @@ packages:
 
   /@blakeembrey/template@1.1.0:
     resolution: {integrity: sha512-iZf+UWfL+DogJVpd/xMQyP6X6McYd6ArdYoPMiv/zlOTzeXXfQbYxBNJJBF6tThvsjLMbA8tLjkCdm9RWMFCCw==}
+    dev: false
+
+  /@emailjs/browser@4.4.1:
+    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@eslint/eslintrc@1.4.1:
@@ -5242,7 +5253,7 @@ packages:
   /jsonfile@3.0.1:
     resolution: {integrity: sha512-oBko6ZHlubVB5mRFkur5vgYR1UyqX+S6Y/oCfLhqNdcc2fYFlDpIoNc7AfKS1KOGcnNAkvsr0grLck9ANM815w==}
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
     dev: false
 
   /jsonparse@1.3.1:
@@ -7654,6 +7665,16 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+    dev: false
+
+  /sonner@1.5.0(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-FBjhG/gnnbN6FY0jaNnqZOMmB73R+5IiyYAw8yBj7L54ER7HB3fOSE5OFiQiE2iXWxeXKvg6fIP4LtVppHEdJA==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /source-map-js@1.0.2:

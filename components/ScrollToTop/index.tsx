@@ -47,7 +47,7 @@ import React from "react";
 import { MessageCircle } from "lucide-react"; // Importing the WhatsApp icon from lucide-react
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "+1234567890"; // Replace with your WhatsApp number
+  const whatsappNumber = "+9710523274114"; // Replace with your WhatsApp number
   const message = "Hello, I need assistance!"; // Replace with the default message you want
 
   // URL for WhatsApp chat
