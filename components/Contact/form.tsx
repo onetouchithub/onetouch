@@ -12,10 +12,12 @@ const ContactForm = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    const formData = new FormData(form.current);
+    formData.append("reply_to", formData.get("email_id"));
 
     emailjs
-      .sendForm("", "", form.current, {
-        publicKey: "",
+      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
+        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -44,8 +46,10 @@ const ContactForm = () => {
               Your Name
             </label>
             <input
+              name="from_name"
               type="text"
               placeholder="Enter your name"
+              id="from_name"
               className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             />
           </div>
@@ -60,6 +64,8 @@ const ContactForm = () => {
             </label>
             <input
               type="email"
+              id="email_id"
+              name="email_id"
               placeholder="Enter your email"
               className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             />
@@ -75,6 +81,7 @@ const ContactForm = () => {
             </label>
             <textarea
               name="message"
+              id="message"
               rows={5}
               placeholder="Enter your Message"
               className="w-full resize-none rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"

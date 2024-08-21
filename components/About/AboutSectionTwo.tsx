@@ -421,6 +421,18 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                  AMC Assurance
+                </h3>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Our AMC services ensure your IT systems run smoothly with
+                  proactive maintenance and timely support. Choose from monthly
+                  or yearly plans that cover all your IT needs—from hardware and
+                  software to network management. Minimize downtime and focus on
+                  your business while we handle the rest.
+                </p>
+              </div>
+              <div className="mb-9">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Customer satisfaction
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
@@ -433,18 +445,6 @@ const AboutSectionTwo = () => {
                   quality, coupled with clear and proactive communication,
                   ensures not just satisfaction, but true partnership and
                   success for every client we serve
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Technological Innovation
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  At Onetouch, we lead the UAE in cutting-edge solutions. Our
-                  expert team constantly adopts the latest technologies,
-                  ensuring our clients stay ahead in their industries. We
-                  rapidly adapt to new trends, providing innovative tools that
-                  give our clients a competitive advantage.
                 </p>
               </div>
               <div className="mb-1">

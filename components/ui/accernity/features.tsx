@@ -9,53 +9,64 @@ import {
   IconRouteAltLeft,
   IconTerminal2,
 } from "@tabler/icons-react";
+import {
+  CloudCog,
+  CodeXml,
+  Laptop,
+  Network,
+  Server,
+  ShieldAlert,
+  UserCog,
+} from "lucide-react";
 
 export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Network",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Cloud services are network dependent, which is why One Touch network management and monitoring services have become critical to IT.",
+      icon: <Network />,
     },
     {
-      title: "Ease of use",
+      title: "Service desk",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "One Touch 24/7 support is about maximising service efficiency, resolving problems and driving continuous service improvement.",
+      icon: <UserCog />,
     },
     {
-      title: "Pricing like no other",
+      title: "Infrastructure",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "One Touch Technology ensures your IT infrastructure is always optimised to support the stable and highly available services organisations demand.",
+      icon: <Laptop />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: "Endpoint management",
+      description:
+        "Client and server endpoints are managed as one estate, ensuring security and stability while maximising uptime and employee productivity.",
+      icon: <Server />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Managed services plus",
+      description:
+        "Go Pro Technology provides advanced management tools to clients who want to take their IT Service Management to a higher level.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Applications",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "One Touch supports Software as well as on-premise deployments, ensuring applications are always optimised for the best possible user experience.",
+      icon: <CodeXml />,
     },
     {
-      title: "Money back guarantee",
+      title: "Disaster Recovery",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "One Touch ensures quick recovery from disruptions, minimizing downtime and protecting critical operations with effective disaster recovery planning.",
+      icon: <ShieldAlert />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      title: "Cloud Management",
+      description: "One Touch optimizes your cloud environment for better performance, cost control, and seamless integration with your IT systems.",
+      icon: <CloudCog />,
     },
   ];
   return (

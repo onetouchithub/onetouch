@@ -1,8 +1,6 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
-import { IconBrandGoogle } from "@tabler/icons-react";
-import { FacebookIcon } from "lucide-react";
 
 const Brands = () => {
   return (
@@ -11,7 +9,7 @@ const Brands = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-xl bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
+              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-xl bg-gray-light px-4 py-4 dark:bg-gray-800 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
               data-wow-delay=".1s"
             >
               {brandsData.map((brand) => (
@@ -36,9 +34,9 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         // href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative h-36 w-full opacity-70 transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
-        <Image src={image} alt={name} fill />
+        <Image className="max-w-full max-h-full object-contain" src={image} alt={name} fill />
       </a>
     </div>
   );

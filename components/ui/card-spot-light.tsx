@@ -10,10 +10,12 @@ export const CardSpotlight = ({
   radius = 350,
   color = "#262626",
   className,
+  cardImage,
   ...props
 }: {
   radius?: number;
   color?: string;
+  cardImage?: string;
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>) => {
   const mouseX = useMotionValue(0);
@@ -59,7 +61,11 @@ export const CardSpotlight = ({
         {isHovering && (
           <CanvasRevealEffect
             animationSpeed={5}
-            containerClassName="bg-transparent absolute inset-0 pointer-events-none"
+            // className="bg-[url('/images/services/cloud.jpg')]"
+            containerClassName={cn(
+              `bg-[url('/images/services/${cardImage}')]`,
+              " absolute inset-0 pointer-events-none",
+            )}
             colors={[
               [59, 130, 246],
               [139, 92, 246],
