@@ -63,7 +63,7 @@ export const CardSpotlight = ({
             animationSpeed={5}
             // className="bg-[url('/images/services/cloud.jpg')]"
             containerClassName={cn(
-              `bg-[url('/images/services/${cardImage}')]`,
+              cardImage,
               " absolute inset-0 pointer-events-none",
             )}
             colors={[
