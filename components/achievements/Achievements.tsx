@@ -16,7 +16,7 @@ const features: Feature[] = [
     id: 2,
     icon: <Lock size={40} />,
     title: "Cybersecurity",
-    image: "cyber.jpg",
+    image: 'cyber.jpg',
     paragraph:
       "Protecting your business from digital threats with advanced security measures, including risk assessments, threat detection, and incident response.",
   },
@@ -24,7 +24,7 @@ const features: Feature[] = [
     id: 3,
     icon: <BarChart size={40} />,
     title: "Data Analytics",
-    image: "data.jpeg",
+    image: "data1.jpg",
     paragraph:
       "Transforming your data into actionable insights through advanced analytics, data visualization, and strategic data-driven decision-making.",
   },
