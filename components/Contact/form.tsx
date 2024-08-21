@@ -56,6 +56,7 @@ const ContactForm = ({ handleClose }: { handleClose?: () => void }) => {
               type="text"
               placeholder="Enter your name"
               id="from_name"
+              required
               className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             />
           </div>
@@ -72,6 +73,7 @@ const ContactForm = ({ handleClose }: { handleClose?: () => void }) => {
               type="email"
               id="email_id"
               name="email_id"
+              required
               placeholder="Enter your email"
               className="w-full rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             />
@@ -81,6 +83,7 @@ const ContactForm = ({ handleClose }: { handleClose?: () => void }) => {
           <div className="mb-8">
             <label
               htmlFor="message"
+              
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
               Your Message
@@ -89,6 +92,7 @@ const ContactForm = ({ handleClose }: { handleClose?: () => void }) => {
               name="message"
               id="message"
               rows={5}
+              required
               placeholder="Enter your Message"
               className="w-full resize-none rounded-lg border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             ></textarea>
