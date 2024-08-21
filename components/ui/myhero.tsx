@@ -18,7 +18,7 @@ const MyHero = () => {
         }}
         title="Contact us"
       >
-        <ContactForm />
+        <ContactForm handleClose={() => setOpenModal(false)} />
       </Modal>
       <div
         className="wow fadeInUp mx-auto max-w-[800px] text-center"

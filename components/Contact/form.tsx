@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
 import { Loader } from "lucide-react";
 
-const ContactForm = () => {
+const ContactForm = ({ handleClose }: { handleClose?: () => void }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
@@ -16,15 +16,21 @@ const ContactForm = () => {
     formData.append("reply_to", formData.get("email_id"));
 
     emailjs
-      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-      })
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        },
+      )
       .then(
         () => {
           toast.success("Email send successfully", {
             description: "Our team will connect you ASAP!",
           });
           setLoading(false);
+          if (handleClose) handleClose();
         },
         (error) => {
           toast.error("Failed to send mail", {
