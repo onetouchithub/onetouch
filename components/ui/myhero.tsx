@@ -3,15 +3,11 @@
 import React, { useState } from "react";
 import { HeroHighlight, Highlight } from "./hero";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import Modal from "../modal/modal";
-import ContactForm from "../Contact/form";
 
 const MyHero = () => {
-  const [openModal, setOpenModal] = useState(true);
   return (
     <HeroHighlight>
-      <Modal
+      {/* <Modal
         isOpen={openModal}
         onClose={() => {
           setOpenModal(false);
@@ -19,7 +15,7 @@ const MyHero = () => {
         title="Contact us"
       >
         <ContactForm handleClose={() => setOpenModal(false)} />
-      </Modal>
+      </Modal> */}
       <div
         className="wow fadeInUp mx-auto max-w-[800px] text-center"
         data-wow-delay=".2s"
