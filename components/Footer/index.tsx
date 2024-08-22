@@ -170,7 +170,7 @@ const Footer = () => {
                 <ul>
                   <li className="mb-4 flex flex-row gap-2">
                     <PhoneIcon />
-                    <a href="tel:+971 50 773 3605">+971 50 773 3605</a>
+                    <a href="tel:+971 52 327 4114">+971 52 327 4114</a>
                   </li>
                   <li className="mb-4 flex flex-row gap-2">
                     <MailIcon />
