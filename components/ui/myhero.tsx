@@ -39,7 +39,7 @@ const MyHero = () => {
           <Highlight className="text-black dark:text-white text-nowrap">
             network installation & configuration
           </Highlight> */}
-          {/* One Touch is your trusted source of <br /> */}
+          One Touch is your trusted source of <br />
           <Highlight className="text-nowrap text-black dark:text-white">
             IT services and support.
           </Highlight>
