@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <>
       <footer
@@ -179,6 +181,10 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div className="mb-8 text-center">
+            © {year} All Rights Reserved. One Touch
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
@@ -381,6 +387,7 @@ const Footer = () => {
             </defs>
           </svg>
         </div>
+        {/* <div className="text-center" >© Slidesigma - 2020 | All Right Reserved</div> */}
       </footer>
     </>
   );
